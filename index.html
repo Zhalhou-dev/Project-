@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script type="text/javascript">
+		var images=[" https://img.freepik.com/free-vector/open-blue-book-white_1308-69339.jpg","https://classroomclipart.com/image/static7/preview2/happy-father-holds-his-sons-hand-60042.jpg","https://cdn5.vectorstock.com/i/1000x1000/37/79/sitting-mother-cartoon-colored-clipart-vector-47003779.jpg","https://cdn.vectorstock.com/i/1000x1000/41/22/cartoon-boy-kid-son-family-image-vector-15024122.webp"]
+		var name=["Family book","Father John","Mother Mary","Son"]
+		var i=0 
+		function update(){
+			i++
+			var no=5
+			if(i>no){
+				i=0
+			}
+			var updatedimg=images[i]
+			var updatedname=name[i]
+			document.getElementById("m").src=updatedimg
+			document.getElementById("n").innerHTML=updatedname
+		}
+	</script>
+</head>
+<body>
+<button class="btn btn-success" onclick="update()">Next</button>
+<img src="" id="m">
+<br>
+<br>
+<b id="n"></b>
+</body>
+</html>
